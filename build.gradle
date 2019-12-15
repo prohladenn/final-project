@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'testing-tehnopolis'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('org.slf4j:slf4j-api:1.7.25')
+    compile('org.seleniumhq.selenium:selenium-java:3.141.59')
+
+    compile('io.qameta.atlas:atlas-webdriver:1.7.0')
+    compile('io.qameta.atlas:atlas-core:1.7.0')
+
+    compile('io.github.bonigarcia:webdrivermanager:3.7.1')
+    compile('org.hamcrest:hamcrest-library:2.2')
+    compile('ru.yandex.qatools.matchers:webdriver-matchers:1.4.1')
+    compile('org.awaitility:awaitility:4.0.1')
+
+    testCompile('junit:junit:4.12')
+}
