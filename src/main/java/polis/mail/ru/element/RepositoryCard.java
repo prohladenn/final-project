@@ -6,8 +6,8 @@ import io.qameta.atlas.webdriver.extension.FindBy;
 public interface RepositoryCard extends AtlasWebElement<RepositoryCard> {
 
     @FindBy(".//*[@itemprop='name codeRepository']")
-    AtlasWebElement title();
+    public AtlasWebElement title();
 
     @FindBy(".//*[@itemprop='programmingLanguage']")
-    AtlasWebElement language();
+    public AtlasWebElement language();
 }
