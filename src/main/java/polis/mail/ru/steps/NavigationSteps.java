@@ -42,7 +42,7 @@ public class NavigationSteps {
 
     @Step("Open `Repositories` page with param text `{text}`, type `{type}`, language `{language.name}`")
     public RepositoriesSteps openRepositoryPage(String text, Type type, Language language) {
-        driver.get(format(BASE_URL + REPOSITORY_SEARCH_URL, Repositories.getItemName(), text, type, language.getName()));
+        driver.get(format(BASE_URL + REPOSITORY_SEARCH_URL, Repositories.getItemName(), text, type.getName(), language));
         return new RepositoriesSteps(atlas, driver);
     }
 }

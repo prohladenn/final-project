@@ -8,6 +8,4 @@ public abstract class AbstractSteps {
     WebDriver driver;
     Atlas atlas;
 
-    protected abstract <T> T onPage();
-
 }

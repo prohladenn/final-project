@@ -8,5 +8,5 @@ import polis.mail.ru.constant.NavigationItem;
 public interface WithProfileNavigation {
 
     @FindBy("//div[contains(@class,'user-profile-nav')]//a[contains(text(),'{{ navigationItem }}')]")
-    public AtlasWebElement userProfileNavigation(@Param("navigationItem") NavigationItem navigationItem);
+    AtlasWebElement userProfileNavigation(@Param("navigationItem") NavigationItem navigationItem);
 }

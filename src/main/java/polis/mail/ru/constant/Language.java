@@ -6,8 +6,8 @@ import java.util.stream.Collectors;
 
 public enum Language {
     ALL("All"),
-    JAVA("Java"),
     SCALA("Scala"),
+    JAVA("Java"),
     KOTLIN("Kotlin"),
     JS("JavaScript"),
     CPP("C++"),
@@ -21,10 +21,11 @@ public enum Language {
     }
 
     public static List<String> languages() {
-        return Arrays.stream(Language.values()).map(Language::getName).collect(Collectors.toList());
+        return Arrays.stream(Language.values()).map(Language::toString).collect(Collectors.toList());
     }
 
-    public String getName() {
+    @Override
+    public String toString() {
         return name;
     }
 }

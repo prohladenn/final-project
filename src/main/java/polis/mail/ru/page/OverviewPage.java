@@ -10,8 +10,8 @@ import polis.mail.ru.layout.WithProfileNavigation;
 public interface OverviewPage extends WebPage, WithHeader, WithProfileNavigation, WithFooter {
 
     @FindBy("//span[contains(@class,'p-name')]")
-    public AtlasWebElement name();
+    AtlasWebElement name();
 
     @FindBy("//span[contains(@class,'p-nickname')]")
-    public AtlasWebElement nickname();
+    AtlasWebElement nickname();
 }

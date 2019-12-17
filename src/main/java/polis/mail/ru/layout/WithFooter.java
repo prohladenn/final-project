@@ -6,5 +6,5 @@ import io.qameta.atlas.webdriver.extension.FindBy;
 public interface WithFooter {
 
     @FindBy("//div[contains(@class,'footer') and @role='contentinfo']")
-    public AtlasWebElement footer();
+    AtlasWebElement footer();
 }
