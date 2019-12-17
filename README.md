@@ -1,7 +1,7 @@
 # testing-tehnopolis 2019 
 cases for https://github.com/prohladenn
 
-![Результат запуска тестов](https://github.com/prohladenn/final-project/src/test/resources/testres.jpg)
+![Результат запуска тестов](https://github.com/prohladenn/final-project/raw/master/src/test/resources/testres.jpg)
 
 ## checkUserInfo (OverviewTest)
 - open `Overview` page
